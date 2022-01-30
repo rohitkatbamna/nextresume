@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Projectsidebar from "../../components/project-details-page-sidebar/project-details-page-sidebar";
 
 
-function Projectnews(){
+function Projects(){
     return(
         <div>
             <Head>
@@ -19,4 +19,4 @@ function Projectnews(){
         </div>
     );
 }
-export default Projectnews;
+export default Projects;
