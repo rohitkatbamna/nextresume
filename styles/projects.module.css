@@ -1,0 +1,13 @@
+#sidebarmobile {
+    display: none;
+}
+
+@media only screen and (max-width: 882px) {
+    #sidebardesktop {
+        display: none;
+    }
+
+    #sidebarmobile {
+        display: block;
+    }
+}

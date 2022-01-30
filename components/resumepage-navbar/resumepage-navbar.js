@@ -5,8 +5,8 @@ import styles from './resumepage-navbar.module.css';
 
 function Resumepagenavbar(){
     return(
-        <div className={styles.all}>
-            <nav className="navbar navbar-expand-lg  navbar-dark sticky-top" >
+       
+            <nav className="navbar navbar-expand-lg navbar-dark sticky-top" id={styles.all}>
                 <div className="container-fluid">
                     <div className="navbar-brand" id={styles.two}>
                         
@@ -30,7 +30,7 @@ function Resumepagenavbar(){
                     </div>
                 </div>
             </nav>
-        </div>
+        
     );
 }
 export default Resumepagenavbar;
