@@ -1,5 +1,6 @@
 import { faFilm, faNewspaper} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 function Projectsidebar(){
@@ -12,8 +13,20 @@ function Projectsidebar(){
                         <div>
                             <h6 style={{color:'#E7E7E7'}}>Navigation</h6>
                             <ul style={{listStyle:'none',lineHeight:'2.5em',cursor:'pointer',fontSize:'17px',fontWeight:'900'}}>
-                                <li><FontAwesomeIcon icon={faNewspaper} style={{ width:'30px',height:'30px', marginTop:'-5px'}}/> News</li>
-                                <li><FontAwesomeIcon icon={faFilm} style={{ width:'30px',height:'30px', marginTop:'-5px'}}/> Movies</li>
+                                <li>
+                                    <Link href="/projectnews">
+                                        <div>    
+                                            <FontAwesomeIcon icon={faNewspaper} style={{ width:'30px',height:'30px', marginTop:'-5px'}}/> News
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/projectmovies">
+                                        <div>
+                                            <FontAwesomeIcon icon={faFilm} style={{ width:'30px',height:'30px', marginTop:'-5px'}}/> Movies
+                                        </div>
+                                    </Link>
+                                </li>
                             
                             </ul>
                         </div>
