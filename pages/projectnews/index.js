@@ -3,6 +3,7 @@ import Resumepagenavbar from "../../components/resumepage-navbar/resumepage-navb
 import Projectsidebar from "../../components/project-details-page-sidebar/project-details-page-sidebar";
 import Mobilesidebarproject from '../../components/project-details-page-mobile-sidebar/project-details-page-mobile-sidebar';
 import styles from '../../styles/projects.module.css';
+import Head from "next/head";
 
 function Newsprojectfirst(){
     const [news, setNews] = useState([]);
@@ -19,6 +20,11 @@ function Newsprojectfirst(){
     }
     return(
         <>
+        <Head>
+            <title>My Projects</title>
+            <meta name="description" content="My Projects" />
+            <link rel="icon" href="dev-brands.svg" />
+        </Head>
         <Resumepagenavbar />
         <div id={styles.sidebarmobile}><Mobilesidebarproject /></div>
         <div className="d-flex">
