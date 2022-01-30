@@ -66,15 +66,16 @@ function Newsprojectfirst(){
                         <div className="col-12">
                             {news.map(newsdata =>
                                 {
-                                return(
+                                
                                     <div className="card mt-5 shadow" style={{ borderRadius:'16px'}}>
                                         <div className="card-body">
                                             <h2 className="fw-bold">{newsdata.title}</h2>
                                             <h3>{newsdata.abstract}</h3>
                                         </div>
                                     </div>
-                                );
-                                })
+                                
+                                }
+                                )
                             }
                         </div>
                     </div>

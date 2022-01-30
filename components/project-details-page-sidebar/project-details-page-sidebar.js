@@ -14,14 +14,14 @@ function Projectsidebar(){
                             <h6 style={{color:'#E7E7E7'}}>Navigation</h6>
                             <ul style={{listStyle:'none',lineHeight:'2.5em',cursor:'pointer',fontSize:'17px',fontWeight:'900'}}>
                                 <li>
-                                    <Link href="/projectnews">
+                                    <Link href="/projectnews" passHref>
                                         <div>    
                                             <FontAwesomeIcon icon={faNewspaper} style={{ width:'30px',height:'30px', marginTop:'-5px'}}/> News
                                         </div>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/projectmovies">
+                                    <Link href="/projectmovies" passHref>
                                         <div>
                                             <FontAwesomeIcon icon={faFilm} style={{ width:'30px',height:'30px', marginTop:'-5px'}}/> Movies
                                         </div>

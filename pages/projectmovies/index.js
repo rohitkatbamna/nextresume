@@ -88,14 +88,14 @@ function Moviesecondproject(){
                     <div className="col-12">
                     {
                     movieresultsdata.map(moviedata =>{
-                            return(
+                           
                                 <div className="card mt-5 shadow" style={{ borderRadius:'16px'}}>
                                     <div className="card-body">
                                         <h2 className="fw-bold">{moviedata.display_title}</h2>
                                         <h3>{moviedata.summary_short}</h3>
                                     </div>
                                 </div>
-                            );
+                            
                         })
                     }     
                     </div>
